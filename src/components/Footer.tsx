@@ -9,8 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Home className="w-6 h-6 text-green-600" />
-              <span className="text-xl font-semibold text-green-600">livest</span>
+              <Link to="/" className="flex items-center gap-2">
+                <img src="/nav_logo_two.png" alt="Altshire Logo" className="h-10 sm:h-12 w-auto object-contain " />
+              </Link>
             </div>
             <p className="text-gray-400 mb-4">
               Your trusted partner in finding the perfect investment properties.

@@ -227,8 +227,8 @@ const Properties = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <div className="bg-[#f5f7f2] py-12">
+    <div className=" min-h-screen">
+      <div className="py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold mb-8 text-center">Available Properties</h1>
           <div className="max-w-4xl mx-auto">

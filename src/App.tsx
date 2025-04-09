@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import PaymentsDashboard from './pages/PaymentsDashboard';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/dashboard" element={<PaymentsDashboard />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
         <Footer />
