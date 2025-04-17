@@ -34,7 +34,7 @@ import SearchBar from './SearchBar';
 const Hero = () => {
   return (
     <div
-      className="relative min-h-[600px] bg-cover bg-center flex items-center justify-center text-white"
+      className="relative min-h-[600px] bg-cover bg-center flex items-center justify-center text-white" data-aos="fade-left"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",

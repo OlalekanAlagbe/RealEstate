@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Don't forget the CSS!
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -13,7 +15,17 @@ import SignUp from './pages/SignUp';
 import PaymentsDashboard from './pages/PaymentsDashboard';
 import Projects from './pages/Projects';
 
+
 function App() {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      mirror: true, // Animations mirror on scroll back
+    });
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-gray-50 flex flex-col">
