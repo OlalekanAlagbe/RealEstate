@@ -4,13 +4,13 @@ import { Facebook, Twitter, Instagram, Linkedin, Home } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white" data-aos="fade-down">
+    <footer className="bg-black text-white ">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Link to="/" className="flex items-center gap-2">
-                <img src="/nav_logo_two.png" alt="Altshire Logo" className="h-10 sm:h-12 w-auto object-contain " />
+                <img src="/footer_logo_white.png" alt="Altshire Logo" className="h-[100px] p-0 m-0 lg:h-[100px] w-auto object-contain " />
               </Link>
             </div>
             <p className="text-gray-400 mb-4">

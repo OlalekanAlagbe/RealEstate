@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import PaymentsDashboard from './pages/PaymentsDashboard';
 import Projects from './pages/Projects';
+import ProjectDetails from './pages/ProjectDetails';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/dashboard" element={<PaymentsDashboard />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
           </Routes>
         </main>
         <Footer />

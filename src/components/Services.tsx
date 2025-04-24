@@ -47,7 +47,7 @@ const services = [
 function Services() {
     return (
       <div
-      data-aos="fade-down"
+      data-aos="fade-up"
         className="min-h-screen bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:

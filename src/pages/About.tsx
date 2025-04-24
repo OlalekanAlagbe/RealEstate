@@ -1,143 +1,3 @@
-// import React, { useEffect } from 'react';
-// import { Shield, Target, Compass, Users, Award } from 'lucide-react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
-// function AboutUsPage() {
-//   useEffect(() => {
-//     AOS.init({ duration: 800, mirror:true });
-//   }, []);
-
-//   return (
-//     <div className="bg-white font-sans text-gray-800">
-//       {/* Hero Section */}
-//       <div className="relative min-h-[80vh] flex items-center justify-center text-center" data-aos="fade-left" >
-//         <img
-//           src="https://images.pexels.com/photos/7031607/pexels-photo-7031607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-//           alt="Hero"
-//           className="absolute inset-0 w-full h-full object-cover opacity-70"
-//         />
-//         <div className="absolute inset-0 bg-black/40" />
-//         <div className="relative z-10 max-w-3xl px-4">
-//           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Altshire</h1>
-//           <p className="text-lg text-gray-100">
-//             Transforming real estate investment through innovation, transparency, and excellence.
-//           </p>
-//         </div>
-//       </div>
-
-//       {/* About Section */}
-//       <section className="py-20 bg-gray-50">
-//         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-//           <div data-aos="fade-right">
-//             <Target className="w-12 h-12 text-green-600 mb-4" />
-//             <h2 className="text-3xl font-bold mb-4">Who We Are</h2>
-//             <p className="mb-4">
-//               Altshire Homes and Castles a leading property development organization dedicated to reimagining the journey map of our customers
-//               (home owners) to redefine luxury and affordability without compromising quality and sustainability through technology and innovation.
-//               Redesigning approach to estate development to improve customers affordability, efficiency and experience.
-//             </p>
-//             <p>
-//               At Altshire Homes and Castles, everything starts with you and continues with you until we know your goals
-//               of a dream home are met and satisfied. With our team of experts (local and abroad), technology and innovations,
-//               we are able to deliver every luxury you deserve at an affordable cost in a beautiful, fresh and natural locations.
-//             </p>
-//           </div>
-//           <div className="overflow-hidden rounded-2xl shadow-lg" data-aos="fade-left">
-//             <img src="/real_estate_one.jpg" alt="Real estate" className="w-full h-full object-cover" />
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Values Section */}
-//       <section className="py-20">
-//         <div className="max-w-7xl mx-auto px-4 text-center">
-//           <h2 className="text-3xl font-bold mb-12" data-aos="fade-up">Our Values</h2>
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-//             {[{
-//               icon: <Shield className="w-6 h-6 text-green-600" />, title: 'Trust & Security',
-//               desc: 'Building lasting relationships through transparency and reliability.'
-//             }, {
-//               icon: <Users className="w-6 h-6 text-green-600" />, title: 'Community Focus',
-//               desc: 'Creating value for our investors and the communities we serve.'
-//             }, {
-//               icon: <Award className="w-6 h-6 text-green-600" />, title: 'Excellence',
-//               desc: 'Maintaining the highest standards in everything we do.'
-//             }, {
-//               icon: <Compass className="w-6 h-6 text-green-600" />, title: 'Innovation',
-//               desc: 'Continuously improving and adapting to serve you better.'
-//             }].map((item, idx) => (
-//               <div key={idx} className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition-shadow" data-aos="zoom-in">
-//                 <div className="bg-green-100 w-12 h-12 flex items-center justify-center rounded-lg mb-4 mx-auto">
-//                   {item.icon}
-//                 </div>
-//                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-//                 <p className="text-gray-600">{item.desc}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Leadership Section */}
-//       <section className="py-20 bg-gray-50">
-//         <div className="max-w-7xl mx-auto px-4 text-center">
-//           <h2 className="text-3xl font-bold mb-12" data-aos="fade-up">Our Leadership Team</h2>
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-//             {[{
-//               name: 'Sarah Johnson',
-//               title: 'Chief Executive Officer',
-//               desc: 'With 15+ years in real estate investment, Sarah leads our vision for democratizing property investment.',
-//               img: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=800',
-//             }, {
-//               name: 'Michael Chen',
-//               title: 'Chief Technology Officer',
-//               desc: 'Michael brings cutting-edge technology solutions to make real estate investment seamless and accessible.',
-//               img: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
-//             }, {
-//               name: 'Emily Rodriguez',
-//               title: 'Chief Investment Officer',
-//               desc: 'Emily\'s expertise in market analysis ensures our investors receive the best opportunities for growth.',
-//               img: 'https://images.pexels.com/photos/2381068/pexels-photo-2381068.jpeg?auto=compress&cs=tinysrgb&w=800',
-//             }].map((member, idx) => (
-//               <div key={idx} className="text-center" data-aos="fade-up">
-//                 <div className="aspect-square rounded-2xl overflow-hidden border shadow-md mb-4 hover:scale-105 transition-transform">
-//                   <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
-//                 </div>
-//                 <h3 className="text-xl font-semibold">{member.name}</h3>
-//                 <p className="text-green-600 mb-1">{member.title}</p>
-//                 <p className="text-gray-600 text-sm">{member.desc}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Call to Action */}
-//       <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white text-center">
-//         <div className="max-w-3xl mx-auto px-4">
-//           <h2 className="text-3xl font-bold mb-4">Join Our Investment Community</h2>
-//           <p className="mb-6">Start your journey towards financial freedom with Livest</p>
-//           <button className="bg-white text-green-700 px-8 py-3 rounded-full font-medium shadow hover:bg-gray-100 transition-colors">
-//             Get Started Today
-//           </button>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
-// export default AboutUsPage;
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect } from 'react';
 import { Shield, Target, Compass, Users, Award } from 'lucide-react';
 import AOS from 'aos';
@@ -231,7 +91,7 @@ function AboutUsPage() {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-0 pb-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold" data-aos="fade-up">Our Core Values</h2>
@@ -286,10 +146,12 @@ function AboutUsPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="pt-0 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-12" data-aos="fade-up">Our Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <h2 className="text-4xl font-bold mb-16 text-gray-800" data-aos="fade-up">
+            Meet Our Leadership
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[{
               name: 'Sarah Johnson',
               title: 'Chief Executive Officer',
@@ -304,15 +166,15 @@ function AboutUsPage() {
               name: 'Emily Rodriguez',
               title: 'Chief Investment Officer',
               desc: 'Emily\'s expertise in market analysis ensures our investors receive the best opportunities for growth.',
-              img: 'https://images.pexels.com/photos/2381068/pexels-photo-2381068.jpeg?auto=compress&cs=tinysrgb&w=800',
+              img: 'https://images.pexels.com/photos/31626524/pexels-photo-31626524/free-photo-of-young-professional-in-urban-business-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             }].map((member, idx) => (
-              <div key={idx} className="text-center" data-aos="fade-up">
-                <div className="aspect-square rounded-2xl overflow-hidden border shadow-md mb-4 hover:scale-105 transition-transform">
-                  <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
+              <div key={idx} className="group text-left bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                <div className="w-full aspect-square overflow-hidden rounded-xl mb-6">
+                  <img src={member.img} alt={member.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-green-600 mb-1">{member.title}</p>
-                <p className="text-gray-600 text-sm">{member.desc}</p>
+                <h3 className="text-2xl font-semibold text-gray-900">{member.name}</h3>
+                <p className="text-green-600 text-sm mb-2 uppercase tracking-wide">{member.title}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{member.desc}</p>
               </div>
             ))}
           </div>

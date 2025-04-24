@@ -60,7 +60,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         <div className="flex items-center flex-1 gap-2 w-full">
           <Building className="w-5 h-5 text-gray-400" />
           <select 
-            className="w-full outline-none bg-transparent"
+            className="w-full text-gray-500 outline-none bg-transparent"
             value={filters.propertyType}
             onChange={(e) => setFilters({ ...filters, propertyType: e.target.value })}
           >

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropertyCard from './PropertyCard';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const properties = [
   {
     id: 1,
@@ -110,8 +111,13 @@ const PropertyGrid = () => {
     }
   };
 
+
+   useEffect(() => {
+      AOS.init({ duration: 800, mirror: true });
+    }, []);
+    
   return (
-    <div className="container mx-auto px-6 py-12">
+    <div className="container mx-auto px-6 lg:px-20 py-12">
       <div className="flex items-center justify-between mb-8">
         <p className="text-gray-600">
           Showing {indexOfFirstProperty + 1}-{Math.min(indexOfLastProperty, properties.length)} of {properties.length} results
@@ -126,10 +132,19 @@ const PropertyGrid = () => {
         )}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {currentProperties.map((property) => (
-          <PropertyCard key={property.id} {...property} />
-        ))}
+            {currentProperties.map((property, index) => (
+              <div
+                key={property.id}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                className="h-full"
+              >
+                <PropertyCard {...property} />
+              </div>
+            ))}
       </div>
+
+
     </div>
   );
 };

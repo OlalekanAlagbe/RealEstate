@@ -15,7 +15,7 @@ interface PropertyCardProps {
 
 const PropertyCard = ({ id, image, title, location, price, beds, baths, sqft }: PropertyCardProps) => {
   return (
-    <div data-aos="fade-down" className="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-500 transition-shadow" >
+    <div className="bg-white rounded-lg overflow-hidden shadow-md transform hover:shadow-xl transition-transform duration-500 transition-shadow" >
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>

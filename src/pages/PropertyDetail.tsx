@@ -857,13 +857,13 @@ const PropertyDetail = () => {
       </div>
 
       {/* Property Information */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 lg:px-20 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2">
             <div className="mb-12">
               <div className="container mx-auto lg:px-4">
-                <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
+                <div className="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
 
                     {/* Left: Title, Location, Features */}
