@@ -21,7 +21,7 @@ function AboutUsPage() {
         <div className="relative z-10 max-w-3xl px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Altshire</h1>
           <p className="text-lg text-gray-100">
-            Transforming real estate investment through innovation, transparency, and excellence.
+            Transforming real estate development through innovation, transparency, and excellence.
           </p>
         </div>
       </div>
@@ -155,16 +155,16 @@ function AboutUsPage() {
             {[{
               name: 'Sarah Johnson',
               title: 'Chief Executive Officer',
-              desc: 'With 15+ years in real estate investment, Sarah leads our vision for democratizing property investment.',
+              desc: 'With 15+ years in real estate development, Sarah leads our vision for democratizing property development.',
               img: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=800',
             }, {
               name: 'Michael Chen',
               title: 'Chief Technology Officer',
-              desc: 'Michael brings cutting-edge technology solutions to make real estate investment seamless and accessible.',
+              desc: 'Michael brings cutting-edge technology solutions to make real estate development seamless and accessible.',
               img: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
             }, {
               name: 'Emily Rodriguez',
-              title: 'Chief Investment Officer',
+              title: 'Chief development Officer',
               desc: 'Emily\'s expertise in market analysis ensures our investors receive the best opportunities for growth.',
               img: 'https://images.pexels.com/photos/31626524/pexels-photo-31626524/free-photo-of-young-professional-in-urban-business-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             }].map((member, idx) => (
@@ -184,7 +184,7 @@ function AboutUsPage() {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">Join Our Investment Community</h2>
+          <h2 className="text-3xl font-bold mb-4">Join Our development Community</h2>
           <p className="mb-6">Start your journey towards financial freedom with Livest</p>
           <button className="bg-white text-green-700 px-8 py-3 rounded-full font-medium shadow hover:bg-gray-100 transition-colors">
             Get Started Today

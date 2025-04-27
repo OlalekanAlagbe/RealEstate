@@ -36,7 +36,7 @@ const ProjectDetails: React.FC = () => {
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 lg:px-20 py-6">
           <button 
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="flex items-center text-gray-600 hover:text-green-600 transition-colors mb-4"
           >
             <ArrowLeft className="h-5 w-5 mr-1" />

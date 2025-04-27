@@ -46,10 +46,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Find your perfect investment properties
+          Beyond Blueprints, Bricks, Blocks & Buildings
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-8">
-          Explore a selection of high-value real estate opportunities designed for financial growth and stability
+          Bridging Vision, Bringing Value, Building Homes — Re-imagining and Re-inventing Real Estate Development
         </p>
         <SearchBar />
       </div>
