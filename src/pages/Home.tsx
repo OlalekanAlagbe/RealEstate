@@ -10,13 +10,18 @@ const Home = () => {
       <Hero />
       <PropertyGrid />
       <Services />
-      <div data-aos="fade-up" className="bg-[#f5f7f2] py-16 text-center">
-        <h2 className="text-3xl font-bold mb-6">Invest in real estate with confidence</h2>
+      <div className="bg-gradient-to-r from-[#f0fdf4] via-[#e0f7e9] to-[#f5f7f2] py-24 px-6 text-center" data-aos="fade-up">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-6">
+          Secure Your Land Today
+        </h2>
+        <p className="text-gray-600 text-base md:text-lg mb-8 max-w-xl mx-auto">
+          Complete a short form to begin your land allocation process.
+        </p>
         <Link to="/apply">
-          <button className="px-8 py-3 bg-green-600 text-white rounded-md hover:bg-green-700">
-              Apply Now
+          <button className="px-10 py-4 bg-green-600 text-white text-lg rounded-xl hover:bg-green-700 transition duration-300 shadow-xl hover:shadow-2xl">
+            Apply Now
           </button>
-       </Link>
+        </Link>
       </div>
     </div>
   );
