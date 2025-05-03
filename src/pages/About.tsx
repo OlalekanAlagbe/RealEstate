@@ -182,7 +182,7 @@ function AboutUsPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white text-center">
+      {/* <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">Join Our development Community</h2>
           <p className="mb-6">Start your journey towards financial freedom with Livest</p>
@@ -190,7 +190,7 @@ function AboutUsPage() {
             Get Started Today
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

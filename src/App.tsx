@@ -15,6 +15,7 @@ import SignUp from './pages/SignUp';
 import PaymentsDashboard from './pages/PaymentsDashboard';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
+import LandAllocation from './pages/LandAllocation';
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
             <Route path="/dashboard" element={<PaymentsDashboard />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/apply" element={<LandAllocation />} />
+
           </Routes>
         </main>
         <Footer />
