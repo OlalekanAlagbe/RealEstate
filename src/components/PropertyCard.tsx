@@ -18,10 +18,10 @@ const PropertyCard = ({ id, image, title, location, price, beds, baths, sqft }: 
     <div className="bg-white rounded-lg overflow-hidden shadow-md transform hover:shadow-xl transition-transform duration-500 transition-shadow" >
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
+        {/* <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3> */}
         <div className="flex items-center gap-1 text-gray-600 mb-3">
-          <MapPin className="w-4 h-4" />
-          <span className="text-sm">{location}</span>
+          {/* <MapPin className="w-4 h-4" /> */}
+          {/* <span className="text-sm">{location}</span> */}
         </div>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-4 text-sm text-gray-600">
@@ -40,7 +40,7 @@ const PropertyCard = ({ id, image, title, location, price, beds, baths, sqft }: 
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-lg font-semibold text-green-600">{price}</span>
+          {/* <span className="text-lg font-semibold text-green-600">{price}</span> */}
           <Link 
             to={`/property/${id}`}
             className="px-4 py-1 text-green-600 border border-green-600 rounded-full hover:bg-green-600 hover:text-white transition-colors"
