@@ -16,6 +16,7 @@ import PaymentsDashboard from './pages/PaymentsDashboard';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
 import LandAllocation from './pages/LandAllocation';
+import ProjectZuma from './pages/ProjectZuma';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/dashboard" element={<PaymentsDashboard />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/project/zuma-rock-estate" element={<ProjectZuma/>} />
             <Route path="/apply" element={<LandAllocation />} />
 
           </Routes>

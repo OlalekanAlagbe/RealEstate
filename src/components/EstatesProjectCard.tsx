@@ -17,7 +17,9 @@ const EstatesProjectCard: React.FC<EstateCardProps> = ({ estate }) => {
     
   return (
     <Link 
-    to={`/projects/${estate.id}`}
+        to={estate.id === 'zuma-rock-estate' 
+           ? `/project/${estate.id}` 
+           : `/projects/${estate.id}`}
     // data-aos="fade-down" 
     className="block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
   >
