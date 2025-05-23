@@ -17,6 +17,7 @@ import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
 import LandAllocation from './pages/LandAllocation';
 import ProjectZuma from './pages/ProjectZuma';
+import ScrollToTop from './lib/ScrollToTop';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Navbar />
         <main className="flex-grow">
